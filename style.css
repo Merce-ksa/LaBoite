@@ -1,0 +1,141 @@
+:root {
+
+  --color-primary: rgba(82, 133, 165, 1);
+  --color-secondary: rgba(242, 209, 48, 1);
+  --color-detail: rgba(191, 63, 73, 1);
+  --color-detail2: rgba(242, 193, 48, 1);
+  --color-light: rgba(242, 242, 242, 1);
+  --color-dark: rgba(0, 0, 0, 1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-light);
+}
+
+header {
+  background-color: var(--color-dark);
+}
+
+section {
+  padding: 4em 0;
+}
+
+.btn {
+  background-color: var(--color-detail);
+  color: var(--color-light);
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+.carousel-indicators li {
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+}
+
+.carousel-caption {
+  color: var(--color-light);
+  margin-bottom: 5%;
+}
+
+.carousel-item img {
+  max-height: 90vh;
+  object-fit: cover;
+  object-position: bottom;
+  filter: brightness(0.5);
+}
+
+.card {
+  margin-bottom: 2em;
+  border: none;
+}
+
+.row-header {
+  padding: 1em 0;
+  text-transform: uppercase;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  font-weight: 600;
+}
+
+.nav-tabs .nav-link {
+  width: 33.3333%;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--color-detail);
+}
+
+.nav-tabs .nav-link:hover {
+  background-color: var(--color-primary);
+  color: var(--color-dark);
+  transition: 0.3s;
+}
+
+.nav-tabs .nav-item.show, .nav-tabs .nav-link.active {
+    color: var(--color-dark);
+    background-color: var(--color-primary);
+    border: none;
+}
+
+.tab-content .active {
+  margin-top: -1px;
+  background-color: var(--color-primary);
+  border: none;
+}
+
+.badge {
+  margin-top: 20px;
+  padding: 10px;
+  background: var(--color-detail2);
+  color: var(--color-dark);
+}
+
+.tickets .container .row-tikets {
+  padding: 3em 0;
+  background: var(--color-primary);
+}
+
+.tickets .container .row-tikets .card {
+  min-height: 300px;
+}
+
+.tickets .container .row .card .card-body h4 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.row-header {
+  padding: 1em 0;
+  text-transform: uppercase;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  font-weight: 600;
+}
+
+.calendar {
+  background: var(--color-primary);
+  align-items: center;
+}
+
+footer {
+  background-color: var(--color-dark);
+}
+
+footer a{
+  color: var(--color-light);
+  transition: 0.3s;
+}
+
+footer a:hover {
+  color: var(--color-detail);
+}
